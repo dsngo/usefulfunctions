@@ -1,6 +1,8 @@
 function checkN(n) {
-  const nArray = n.toString().split('');
-  const nSum = nArray.reduce((a, e) => parseInt(a, 10) + parseInt(e, 10), 0);
+  const nSum = n
+    .toString()
+    .split('')
+    .reduce((a, e) => parseInt(a, 10) + parseInt(e, 10), 0);
   return nSum === 9 && n;
 }
 function findNth(n) {
