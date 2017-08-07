@@ -6,12 +6,8 @@ function checkN(n) {
   return nSum === 9;
 }
 function findNth(n) {
-  let nth = 0,
-    result = 0;
-  while (nth !== n) {
-    result += 9;
-    checkN(result) && ++nth;
-  }
+  let result = 0;
+  for (let nth = 0; nth !== n;) {result += 9; checkN(result) && ++nth;}
   return result;
 }
 const start = Date.now();
