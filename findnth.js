@@ -3,7 +3,7 @@ function checkN(n) {
     .toString()
     .split('')
     .reduce((a, e) => parseInt(a, 10) + parseInt(e, 10), 0);
-  return nSum === 9 && n;
+  return nSum === 9;
 }
 function findNth(n) {
   let nth = 0,
